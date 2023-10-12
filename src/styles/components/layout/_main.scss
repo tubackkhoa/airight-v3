@@ -1,0 +1,12 @@
+@import './content';
+@import './header';
+@import './sider';
+
+.app-layout {
+  height: 100%;
+  flex-direction: row;
+
+  .ant-layout-sider-trigger {
+    display: none;
+  }
+}

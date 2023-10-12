@@ -1,0 +1,27 @@
+html,
+body {
+  font-size: 14px;
+  font-family: 'Sora', 'Poppins', sans-serif;
+  height: 100%;
+  width: 100%;
+  @include scrollbars();
+
+  #root {
+    height: 100%;
+
+    .App {
+      height: 100%;
+    }
+  }
+}
+
+html {
+  font-family: sans-serif;
+  scroll-snap-type: mandatory;
+  scroll-snap-points-y: repeat(100vh);
+  scroll-snap-type: y mandatory;
+}
+
+.container {
+  width: 100%;
+}

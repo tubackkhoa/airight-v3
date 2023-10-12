@@ -1,0 +1,210 @@
+.header-container {
+  padding: 16px 0px;
+  border-bottom: 1px solid var(--gray-100, #f0f2fa);
+  background: var(--main-white, #fff);
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+
+  position: fixed;
+  top: 0px;
+  z-index: 1000;
+
+  .start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .logo {
+      display: flex;
+      margin-left: 40px;
+      align-items: center;
+
+      .ant-image-img {
+        width: unset;
+      }
+
+      .divice {
+        width: 1px;
+        height: 38px;
+        background-color: #f0f2fa;
+        margin: 0 24px;
+      }
+
+      @include tablet_max {
+        margin-left: 20px;
+      }
+    }
+    .menu {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .menu-item {
+        color: var(--main-black, #181818);
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 150%; /* 21px */
+        text-decoration: none;
+        margin-right: 28px;
+        span {
+          white-space: nowrap;
+        }
+
+        @include desktop_max {
+          font-size: 13px;
+          margin-right: 16px;
+        }
+      }
+    }
+  }
+
+  .end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow: 1;
+
+    form {
+      width: 100%;
+    }
+    .form-item {
+      display: flex;
+      width: 100%;
+    }
+
+    .search-input {
+      .ant-input-group {
+        margin-left: auto;
+        display: flex;
+        width: 100%;
+        min-width: 70px;
+        max-width: 600px;
+        padding: 8px 16px;
+        gap: 30px;
+        flex-shrink: 0;
+        border-radius: 100px;
+        background: var(--gray-50, #f8f9fd);
+        justify-content: center;
+        align-items: center;
+      }
+
+      input {
+        width: 100%;
+        border: none;
+        background: transparent;
+        margin-bottom: 0;
+        padding: 0;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%; /* 24px */
+
+        &:focus {
+          border: none;
+          outline: none;
+          box-shadow: none;
+        }
+        &::placeholder {
+          color: var(--gray-500, #777e90);
+        }
+      }
+
+      .ant-input-group-addon {
+        order: -1;
+
+        .ant-btn {
+          border: none;
+          height: unset;
+          margin: 0;
+          padding: 0;
+          background: transparent;
+          vertical-align: middle;
+          &[ant-click-animating-without-extra-node='true']::after {
+            display: none;
+          }
+
+          box-shadow: none;
+        }
+      }
+    }
+
+    .login-btn {
+      display: flex;
+      padding: 10px 20px;
+      margin-right: 40px;
+      margin-left: 40px;
+      height: 40px;
+      width: 160px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border-radius: 100px;
+      background: var(--orange-50, #da613a);
+      color: var(--orange-500, #fbefeb);
+
+      /* bold/button */
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 150%; /* 22.5px */
+      transition: all 0.5s;
+
+      // &:hover {
+      //   background: var(--orange-50, #fbefeb);
+      //   color: var(--orange-500, #da613a);
+      //   transition: all 0.5s;
+      // }
+
+      @include desktop_max {
+        width: unset;
+      }
+
+      @include tablet_max {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+
+.drawer {
+  .header {
+    display: flex;
+    justify-content: center;
+    .ant-btn {
+      background-color: transparent;
+      border: none;
+
+      box-shadow: none;
+
+      &[ant-click-animating-without-extra-node='true']::after {
+        display: none;
+      }
+    }
+  }
+  .menu {
+    border-top: 1px solid #eee;
+    background-color: #fff;
+    position: fixed;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    .menu-item {
+      color: var(--main-black, #181818);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 150%; /* 21px */
+      text-decoration: none;
+      margin-top: 20px;
+      span {
+        white-space: nowrap;
+      }
+    }
+  }
+}
