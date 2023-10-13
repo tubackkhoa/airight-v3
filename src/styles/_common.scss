@@ -16,9 +16,9 @@ body {
 }
 
 html {
-  font-family: sans-serif;
   scroll-snap-type: mandatory;
   scroll-snap-points-y: repeat(100vh);
+  scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
 }
 

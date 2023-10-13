@@ -2,10 +2,21 @@ import BannerVideo from '../../resources/videos/bannervideo.mp4';
 import TopLeftImg from '../../resources/images/topleft.png';
 import BottomRightImg from '../../resources/images/bottomright.png';
 import { Image } from 'antd';
+import { useEffect, useRef } from 'react';
+import { useScrollAnimation } from 'hooks/useScrollAnimation';
 
 const Banner = () => {
+  const banner = useRef<HTMLDivElement>(null);
+  const videoRef = useRef<any>(null);
+
+  const { active } = useScrollAnimation(banner);
+
+  useEffect(() => {
+    
+  }, [active])
+
   return (
-    <div className='banner-wrapper'>
+    <div className='banner-wrapper' ref={banner}>
       <div className='text-wrapper'>
         <p className='title'>
           The Future of Generative AI
@@ -35,12 +46,12 @@ const Banner = () => {
 
       <div className='banner-video'>
         <div className='video-wrapper'>
-          <video autoPlay loop>
+          <video autoPlay loop ref={videoRef}>
             <source src={BannerVideo} type='video/mp4' />
           </video>
         </div>
         {/* scale */}
-        <div className='round-view scale'></div>
+        <div className={`round-view ${active ? 'scale' : ''}` } ></div>
       </div>
 
       <Image src={TopLeftImg} className='top-left' preview={false} />
