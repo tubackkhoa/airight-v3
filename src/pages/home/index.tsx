@@ -3,8 +3,8 @@ import Banner from "components/Banner";
 const Home = () => {
   return (
     <div className='homepage'>
-      <section>
-        <Banner/>
+      <Banner />
+      {/* <section>
         <h1>Section One</h1>
       </section>
       <section>
@@ -12,7 +12,7 @@ const Home = () => {
       </section>
       <section>
         <h1>Section Three</h1>
-      </section>
+      </section> */}
       <section>
         <h1>Section Four</h1>
       </section>

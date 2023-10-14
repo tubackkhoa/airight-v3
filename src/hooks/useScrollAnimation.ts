@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 
-const useScrollAnimation = (ref: HTMLDivElement | any, offset?: null | number) => {
+const useScrollAnimation = (ref: HTMLDivElement | any, offset?: null | number, onlyInviewPort:boolean = true) => {
   const [active, setActive] = useState(false);
+
+  // console.log('ref.current', ref.current);
 
   useEffect(() => {
     const viewportHeight = window.innerHeight;
@@ -9,10 +11,10 @@ const useScrollAnimation = (ref: HTMLDivElement | any, offset?: null | number) =
       const hasElement = ref && ref.current;
       if (!hasElement) return;
       const { top, bottom } = hasElement && ref.current.getBoundingClientRect();
-      const isIntersecting = bottom + (offset ? (viewportHeight * offset) / 100 : 0) < viewportHeight && top < 0;
+      const isIntersecting = top + (offset ? (viewportHeight * offset) / 100 : 0) < viewportHeight && ( onlyInviewPort ? bottom > 0 : true);
 
-      console.log('top, bottom', top, bottom, offset)
-      console.log('viewportHeight', viewportHeight, top + (offset ? (viewportHeight * offset) / 100 : 0), isIntersecting)
+      // console.log('top, bottom', top, bottom, offset)
+      // console.log('viewportHeight', viewportHeight, top + (offset ? (viewportHeight * offset) / 100 : 0), isIntersecting)
 
       if (isIntersecting) {
         setActive(true);
@@ -27,7 +29,7 @@ const useScrollAnimation = (ref: HTMLDivElement | any, offset?: null | number) =
     };
   }, [ref]);
 
-  console.log('active', active)
+  // console.log('active', active)
   return { active };
 };
 
