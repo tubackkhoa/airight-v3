@@ -1,19 +1,12 @@
-import Banner from "components/Banner";
+import Banner from 'components/Banner';
+import Formula from 'components/Formula';
 
 const Home = () => {
   return (
     <div className='homepage'>
       <Banner />
-      {/* <section>
-        <h1>Section One</h1>
-      </section>
       <section>
-        <h1>Section Two</h1>
-      </section>
-      <section>
-        <h1>Section Three</h1>
-      </section> */}
-      <section>
+        <Formula />
         <h1>Section Four</h1>
       </section>
       <section>
