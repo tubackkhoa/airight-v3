@@ -6,7 +6,7 @@ import bgIncoming from 'resources/images/bgIncoming.png';
 const Formula = () => {
   const formulaRef = useRef<HTMLDivElement>(null);
 
-  const { active } = useScrollAnimation(AnimationKey.FORMULA, formulaRef, 0, false);
+  const { active } = useScrollAnimation(AnimationKey.FORMULA, formulaRef, 0, true);
 
   return (
     <div ref={formulaRef} className='formula-wrapper'>
