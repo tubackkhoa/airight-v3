@@ -1,7 +1,7 @@
 import { DotLottiePlayer } from '@dotlottie/react-player';
 import classNames from 'classnames';
 import { useScrollAnimation } from 'hooks/useScrollAnimation';
-import { useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import bgAiModel from 'resources/images/bg-ai-model.png';
 // import aiVideo from 'resources/videos/ai_model.lottie';
 import { AnimationKey } from 'store/animation/useAnimationStore';
@@ -9,9 +9,16 @@ import { AnimationKey } from 'store/animation/useAnimationStore';
 const AIModel = () => {
   const aimodelRef = useRef<HTMLDivElement>(null);
 
-  const { active } = useScrollAnimation(AnimationKey.AIMODEL, aimodelRef, 0, true);
+  const { active } = useScrollAnimation(AnimationKey.AIMODEL, aimodelRef, 0, false);
 
   const [hoverActive, setHoverActive] = useState(false);
+
+  const scrollIconRef = useRef<any>(null);
+
+  useEffect(() => {
+    scrollIconRef.current?.play();
+  }, [scrollIconRef]);
+
   return (
     <div ref={aimodelRef} className='aimodel-wrapper'>
       <div className='content'>
@@ -86,6 +93,10 @@ const AIModel = () => {
             </p>
             <div className='desc-scroll'>
               <p>Add ingredient II</p>
+
+              <div className='down-icon'>
+                <DotLottiePlayer src='/scrolldown_arrow.lottie' autoplay loop ref={scrollIconRef} />
+              </div>
             </div>
           </div>
         </div>

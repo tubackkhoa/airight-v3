@@ -1,12 +1,19 @@
 import { useScrollAnimation } from 'hooks/useScrollAnimation';
-import { useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { AnimationKey } from 'store/animation/useAnimationStore';
 import bgIncoming from 'resources/images/bgIncoming.png';
+import { DotLottiePlayer } from '@dotlottie/react-player';
 
 const Formula = () => {
   const formulaRef = useRef<HTMLDivElement>(null);
 
   const { active } = useScrollAnimation(AnimationKey.FORMULA, formulaRef, 0, true);
+
+  const scrollIconRef = useRef<any>(null);
+
+  useEffect(() => {
+    scrollIconRef.current?.play();
+  }, [scrollIconRef]);
 
   return (
     <div ref={formulaRef} className='formula-wrapper'>
@@ -97,6 +104,9 @@ const Formula = () => {
       </div>
       <div className='bottom'>
         <p className=''>Incoming Explanation</p>
+        <div className='down-icon'>
+          <DotLottiePlayer src='/scrolldown_arrow.lottie' autoplay loop ref={scrollIconRef} />
+        </div>
       </div>
       <img className='bg-incoming' alt='bgIncoming' src={bgIncoming} />
     </div>

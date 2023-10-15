@@ -1,0 +1,133 @@
+.touch-wrapper {
+  position: relative;
+  z-index: 20;
+  background-color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 240px;
+
+  .content {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    z-index: 20;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+
+      .ingredient {
+        position: relative;
+        margin-bottom: 64px;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 40px;
+        text-align: left;
+
+        .title {
+          font-size: 24px;
+          font-weight: 300;
+          line-height: 36px;
+          color: #da613a;
+        }
+
+        .desc {
+          transform-origin: left;
+          font-size: 62px;
+          font-weight: 600;
+          line-height: 78px;
+          color: rgb(24, 24, 24);
+          transition-duration: 0.5s;
+
+          p {
+          }
+
+          .underline {
+            position: absolute;
+            bottom: -20px;
+            height: 2px;
+            width: 100%;
+            background-color: #da613a;
+            transition-duration: 0.5s;
+            transition-property: opacity;
+            transition-timing-function: ease;
+            opacity: 0;
+          }
+
+          &:hover {
+            transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(1.1) scaleY(1.1);
+
+            .underline {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      .detail {
+        position: relative;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        gap: 48px;
+
+        .desc {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 17px;
+        }
+
+        .next {
+          display: inline-flex;
+          align-items: center;
+          gap: 12px;
+
+          p {
+            font-size: 20px;
+            color: #da613a;
+          }
+
+          .down-icon {
+            width: 32px;
+          }
+        }
+      }
+    }
+
+    .right {
+      position: relative;
+      top: -5%;
+      width: 83%;
+      flex-shrink: 0;
+    }
+  }
+  .bgleft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    //   z-index: 10;
+    width: 33%;
+
+    @include small_tablet_max() {
+      display: none;
+    }
+  }
+
+  .bgright {
+    position: absolute;
+    right: 0;
+    top: 0;
+    //   z-index: 10;
+    width: 50%;
+
+    @include tablet_max() {
+      width: 100%;
+    }
+  }
+}
