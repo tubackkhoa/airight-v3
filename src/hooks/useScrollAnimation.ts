@@ -23,8 +23,13 @@ const useScrollAnimation = (
       const isIntersecting =
         top + (offset ? (viewportHeight * offset) / 100 : 0) < viewportHeight && (onlyInViewPort ? bottom > 0 : true);
 
-      // console.log('top, bottom', top, bottom, offset)
-      // console.log('viewportHeight', viewportHeight, top + (offset ? (viewportHeight * offset) / 100 : 0), isIntersecting)
+      // console.log('top, bottom', top, bottom, offset);
+      // console.log(
+      //   'viewportHeight',
+      //   viewportHeight,
+      //   top + (offset ? (viewportHeight * offset) / 100 : 0),
+      //   isIntersecting,
+      // );
 
       if (isIntersecting) {
         // setActive(true);

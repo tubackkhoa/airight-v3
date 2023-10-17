@@ -1,13 +1,15 @@
-import BannerVideo from '../../resources/videos/bannervideo.mp4';
-import TopLeftImg from '../../resources/images/topleft.png';
-import BottomRightImg from '../../resources/images/bottomright.png';
-import BgSimpleRecipe from '../../resources/images/bgSimpleRecipe.png';
+import { DotLottiePlayer } from '@dotlottie/react-player';
 import { Image } from 'antd';
-import { useEffect, useRef } from 'react';
-import { useScrollAnimation } from 'hooks/useScrollAnimation';
 import classNames from 'classnames';
+import { useScrollAnimation } from 'hooks/useScrollAnimation';
+import { useEffect, useRef } from 'react';
+import DownIcon from 'resources/svg/DownIcon';
+import { useGetAnimationStatusByKey } from 'store/animation/selector';
 import { AnimationKey } from 'store/animation/useAnimationStore';
-import { useGetFormulaAnimationActive } from 'store/animation/selector';
+import BgSimpleRecipe from '../../resources/images/bgSimpleRecipe.png';
+import BottomRightImg from '../../resources/images/bottomright.png';
+import TopLeftImg from '../../resources/images/topleft.png';
+import BannerVideo from '../../resources/videos/bannervideo.mp4';
 
 const Banner = () => {
   const banner = useRef<HTMLElement>(null);
@@ -17,10 +19,17 @@ const Banner = () => {
   const { active: activeVideo } = useScrollAnimation(AnimationKey.BANNER, banner, 100, false);
   const { active: activeSlogan } = useScrollAnimation(AnimationKey.SLOGAN, sloganSection, 0, true);
 
-  const activeFormula = useGetFormulaAnimationActive();
+  // console.log('activeSlogan', activeSlogan);
+  // console.log('activeVideo', activeVideo);
 
-  console.log(activeSlogan, 'activeSlogan');
-  console.log(activeVideo, 'activeVideo');
+  const activeFormula = useGetAnimationStatusByKey(AnimationKey.FORMULA);
+  const activeCopyright = useGetAnimationStatusByKey(AnimationKey.COPYRIGHT);
+
+  const scrollIconRef = useRef<any>(null);
+
+  useEffect(() => {
+    scrollIconRef.current?.play();
+  }, [scrollIconRef]);
 
   useEffect(() => {
     if (activeVideo) {
@@ -52,9 +61,16 @@ const Banner = () => {
           </div>
         </div>
 
+        <div className='next'>
+          <p>Scroll to Discover</p>
+          <div className='down-icon'>
+            <DotLottiePlayer src='/scrolldown_arrow.lottie' autoplay loop ref={scrollIconRef} />
+          </div>
+        </div>
+
         <div
           className={classNames('banner-video', {
-            hidden: activeFormula,
+            hidden: activeCopyright, // || activeFormula,
           })}
         >
           <div className='video-wrapper'>
@@ -75,7 +91,13 @@ const Banner = () => {
         <Image src={TopLeftImg} className='top-left' preview={false} />
         <Image src={BottomRightImg} className='bottom-right' preview={false} />
       </section>
-      <section>
+      <section className='show-video'>
+        <div>
+          <p className='next'>Scroll to Skip</p>
+          <div className='scroll-icon flex h-8 w-8 items-center justify-center rounded-[100px] border border-solid border-white p-[7px]'>
+            <DownIcon />
+          </div>
+        </div>
         <h1>Section Two</h1>
       </section>
       <section ref={sloganSection}>

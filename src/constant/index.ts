@@ -49,10 +49,9 @@ export const MAX_INTEGER_PRICE = 9;
 export const ROUTE_URL = {
   HOME: '/',
   LOGIN: '/login',
-  DASHBOARD: '/dashboard',
 };
 
 export const TAB = 'tab';
 export const CREATE = 'create';
 
-export const DEFAULT_PAGE = ROUTE_URL.DASHBOARD;
+export const DEFAULT_PAGE = ROUTE_URL.HOME;
