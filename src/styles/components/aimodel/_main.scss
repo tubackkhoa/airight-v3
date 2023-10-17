@@ -10,10 +10,11 @@
   padding: 0 160px;
   background-color: #fff;
 
-  //   @include small_tablet_max {
-  //     padding: 0 160px;
-  //     justify-content: center;
-  //   }
+  @include small_tablet_max {
+    padding: 0 40px;
+    justify-content: flex-start;
+    padding-top: 20%;
+  }
 
   .content {
     position: relative;
@@ -36,6 +37,18 @@
         align-items: flex-start;
         grid-column: span 2 / span 2;
 
+        @include tablet_max {
+          position: absolute;
+          grid-column: span 1 / span 1;
+          right: 0;
+        }
+
+        // @include tablet_max {
+        //   position: absolute;
+        //   grid-column: span 1 / span 1;
+        //   right: 0;
+        // }
+
         .ingredient {
           font-size: 30px;
           font-weight: 300;
@@ -51,6 +64,12 @@
           font-weight: 600;
           line-height: 78px;
 
+          @include small_tablet_max {
+            font-size: 32px;
+            font-size: 32px;
+            line-height: 40px;
+          }
+
           .underline {
             position: absolute;
             left: 160px;
@@ -62,6 +81,11 @@
             transition-duration: 0.25s;
             transition-property: opacity;
             transition-timing-function: ease;
+
+            @include small_tablet_max {
+              left: 0px;
+              width: 100%;
+            }
           }
 
           &.active {
@@ -124,6 +148,26 @@
             }
           }
         }
+
+        @include small_tablet_max {
+          // display: none;
+
+          // .tryit {
+          //   position: absolute;
+          //   right: 108px;
+          //   top: 138px;
+          // }
+        }
+
+        @include tablet_max {
+          display: block;
+          top: 55px;
+          z-index: 30;
+
+          .tryit {
+            display: none;
+          }
+        }
       }
     }
 
@@ -132,6 +176,10 @@
       max-height: 300px;
       max-width: 1200px;
       grid-template-columns: repeat(3, minmax(0, 1fr));
+
+      @include small_tablet_max {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
 
       .left {
         display: grid;
@@ -167,6 +215,10 @@
               background-color: rgb(240 242 250);
               padding: 6px 12px;
 
+              @include tablet_max {
+                display: none;
+              }
+
               .prompt {
                 font-size: 13px;
                 font-weight: 400;
@@ -187,6 +239,10 @@
               //     }
               //   }
             }
+
+            @include tablet_max {
+              display: none;
+            }
           }
 
           .desc {
@@ -198,6 +254,11 @@
             color: rgb(97, 104, 121);
             white-space: pre-line;
             text-align: left;
+
+            @include tablet_max {
+              font-size: 12px;
+              width: 150px;
+            }
           }
 
           .detail-link {
@@ -223,6 +284,18 @@
               font-weight: 600;
               color: #fff;
             }
+
+            @include tablet_max {
+              right: 22px;
+              bottom: 8px;
+              height: 42px;
+              width: 42px;
+              padding: 2px 1px;
+
+              p {
+                font-size: 8px;
+              }
+            }
           }
         }
       }
@@ -235,6 +308,12 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 48px;
+
+        @include small_tablet_max {
+          top: 20px;
+          left: 0;
+          gap: 20px;
+        }
 
         p {
           text-align: left;

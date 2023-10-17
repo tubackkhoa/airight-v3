@@ -96,7 +96,7 @@
               transition-duration: 0.5s;
 
               @include tablet_max() {
-                font-size: 2px;
+                font-size: 32px;
                 line-height: 50px;
 
                 .underline {

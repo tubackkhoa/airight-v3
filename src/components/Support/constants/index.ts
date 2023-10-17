@@ -28,7 +28,7 @@ export const MENU_LIST = [
         href: 'https://airight.io/buy-airi',
       },
       {
-        key: 'introduction',
+        key: 'careers',
         target: '_blank',
         text: 'Careers',
         href: 'https://oraichain.notion.site/Recruitment-News-September-2023-b14d9467f9604b3d9cf9a3282730cec5',
@@ -115,26 +115,32 @@ export const MENU_LIST = [
 
 export const SOCIAL_LIST = [
   {
+    key: 'MediumIcon',
     Icon: MediumIcon,
     link: 'https://blog.airight.io/',
   },
   {
+    key: 'TelegramIcon',
     Icon: TelegramIcon,
     link: 'https://t.me/airight_io',
   },
   {
+    key: 'TwitterIcon',
     Icon: TwitterIcon,
     link: 'https://twitter.com/aiRight_io',
   },
   {
+    key: 'DiscordIcon',
     Icon: DiscordIcon,
     link: 'https://discord.gg/KcvgeUsjwt',
   },
   {
+    key: 'GitIcon',
     Icon: GitIcon,
     link: 'https://github.com/oraichain',
   },
   {
+    key: 'YoutubeIcon',
     Icon: YoutubeIcon,
     link: 'https://www.youtube.com/channel/UCyckcs_Fm8kU4o2Y1_KPjXg',
   },

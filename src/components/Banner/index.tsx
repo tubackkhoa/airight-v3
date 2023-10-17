@@ -17,7 +17,7 @@ const Banner = () => {
   const videoRef = useRef<HTMLVideoElement>(null);
 
   const { active: activeVideo } = useScrollAnimation(AnimationKey.BANNER, banner, 100, false);
-  const { active: activeSlogan } = useScrollAnimation(AnimationKey.SLOGAN, sloganSection, 0, true);
+  const { active: activeSlogan } = useScrollAnimation(AnimationKey.SLOGAN, sloganSection, 50, true);
 
   // console.log('activeSlogan', activeSlogan);
   // console.log('activeVideo', activeVideo);

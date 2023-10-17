@@ -64,7 +64,7 @@ const Support = () => {
           <div className='social-wrapper'>
             <div>
               {SOCIAL_LIST.map((e) => (
-                <Link target='_blank' to={e.link}>
+                <Link target='_blank' to={e.link} key={e.key}>
                   <e.Icon />
                 </Link>
               ))}

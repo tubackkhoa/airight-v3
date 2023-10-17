@@ -29,8 +29,8 @@ const FeedbackIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
         y2='10.034'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='#DA613A'></stop>
-        <stop offset='1' stop-color='#F56C4E' stop-opacity='0.84'></stop>
+        <stop stopColor='#DA613A'></stop>
+        <stop offset='1' stopColor='#F56C4E' stopOpacity='0.84'></stop>
       </linearGradient>
       <linearGradient
         id='feedback-button_svg__b'
@@ -40,8 +40,8 @@ const FeedbackIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
         y2='17.329'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='#DA613A'></stop>
-        <stop offset='1' stop-color='#F56C4E' stop-opacity='0.84'></stop>
+        <stop stopColor='#DA613A'></stop>
+        <stop offset='1' stopColor='#F56C4E' stopOpacity='0.84'></stop>
       </linearGradient>
       <linearGradient
         id='feedback-button_svg__c'
@@ -51,8 +51,8 @@ const FeedbackIcon: FC<SVGProps<SVGSVGElement>> = (props) => (
         y2='28.329'
         gradientUnits='userSpaceOnUse'
       >
-        <stop stop-color='#DA613A'></stop>
-        <stop offset='1' stop-color='#F56C4E' stop-opacity='0.84'></stop>
+        <stop stopColor='#DA613A'></stop>
+        <stop offset='1' stopColor='#F56C4E' stopOpacity='0.84'></stop>
       </linearGradient>
     </defs>
   </svg>

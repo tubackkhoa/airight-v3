@@ -18,13 +18,16 @@
       gap: 12px;
       visibility: hidden;
 
-      @include small_tablet_max {
+      @include tablet_max {
+        left: 40px;
+        overflow-x: auto;
         // @include scrollbars();
-        overflow-x: scroll;
+        width: 100vw;
       }
 
       @include tablet_max {
-        right: 40px;
+        left: 20px;
+        width: calc(100vw - 20px);
       }
 
       &.visible {
@@ -33,7 +36,6 @@
 
       .btn-nav {
         display: flex;
-        width: 245px;
         align-items: center;
         justify-content: center;
         gap: 12px;
@@ -43,6 +45,11 @@
         cursor: pointer;
         color: rgb(97, 104, 121);
         background-color: #fff;
+
+        @include small_tablet_max {
+          // width: 120px;
+          padding: 8px 12px;
+        }
 
         &.active {
           background-color: #da613a;
@@ -55,9 +62,16 @@
           font-size: 14px;
           font-weight: 400;
           text-transform: uppercase;
+          white-space: nowrap;
+          width: 140px;
+
+          @include small_tablet_max {
+            width: 110px;
+            font-size: 12px;
+          }
 
           @include tablet_max {
-            font-size: 8px;
+            font-size: 10px;
           }
         }
       }
