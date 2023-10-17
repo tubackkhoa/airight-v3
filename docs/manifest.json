@@ -46,7 +46,7 @@
       "node_modules/@dotlottie/react-player/dist/lottie_light_html-QXO6XUZK-N4R277UW.js",
       "node_modules/@dotlottie/react-player/dist/lottie_html-DEQZ7JWN-7UJDZM6D.js"
     ],
-    "file": "assets/index-cef9c79b.js",
+    "file": "assets/index-c2111f02.js",
     "isEntry": true,
     "src": "index.html"
   },
@@ -55,7 +55,7 @@
     "src": "node_modules/@dotlottie/react-player/dist/Karla-Regular-S52ZIU5L.woff"
   },
   "node_modules/@dotlottie/react-player/dist/dist-4JHQ5UB4-UQC3DUUT.js": {
-    "file": "assets/dist-4JHQ5UB4-UQC3DUUT-c31778ed.js",
+    "file": "assets/dist-4JHQ5UB4-UQC3DUUT-84e172da.js",
     "imports": [
       "index.html",
       "_chunk-M2BEWT7H-2d4e7f2d.js"
@@ -80,7 +80,7 @@
     "src": "node_modules/@dotlottie/react-player/dist/dotlottie-audio-XNJDYXTA.js"
   },
   "node_modules/@dotlottie/react-player/dist/dotlottie-state-machine-manager-2STY3O46-JRH54NRU.js": {
-    "file": "assets/dotlottie-state-machine-manager-2STY3O46-JRH54NRU-e02631af.js",
+    "file": "assets/dotlottie-state-machine-manager-2STY3O46-JRH54NRU-9d9e97cd.js",
     "imports": [
       "index.html"
     ],
