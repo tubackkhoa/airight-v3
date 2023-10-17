@@ -1,7 +1,3 @@
-import { theme } from 'antd';
-
-const { darkAlgorithm, compactAlgorithm } = theme;
-
 export const customTheme = {
   token: {
     colorPrimary: 'dark',

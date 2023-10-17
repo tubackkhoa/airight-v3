@@ -4,7 +4,7 @@ import type { TablePaginationConfig } from 'antd';
 import type { FilterValue, SorterResult, SortOrder } from 'antd/lib/table/interface';
 import type { SORT_PARAMS } from 'constant';
 
-import { getSortDirection } from 'utils';
+const getSortDirection = (order: string) => order;
 
 const useTable = <T, P extends SORT_PARAMS>({
   setSearchParams,

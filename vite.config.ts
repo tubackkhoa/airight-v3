@@ -3,6 +3,7 @@
 import react from '@vitejs/plugin-react';
 import * as path from 'path';
 import { defineConfig } from 'vite';
+import inject from '@rollup/plugin-inject';
 import { ViteEjsPlugin } from 'vite-plugin-ejs';
 
 // import { dependencies } from './package.json';
@@ -50,6 +51,7 @@ export default defineConfig({
     sourcemap: false,
     outDir: path.join(__dirname, 'build'),
     rollupOptions: {
+      plugins: [inject({ Buffer: ['Buffer', 'Buffer'] })],
       // output: {
       //   manualChunks: {
       //     vendor: ['react', 'react-router-dom', 'react-dom', 'stream-browserify'],

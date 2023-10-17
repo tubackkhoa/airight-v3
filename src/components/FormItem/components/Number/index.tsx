@@ -6,7 +6,7 @@ import { Input, InputProps } from 'antd';
 
 import NumberFormat from 'components/NumberFormat';
 
-import { clearDotValue } from 'utils';
+const clearDotValue = (value: string) => value;
 
 interface IFormNumber {
   field?: ControllerRenderProps<any, string>;

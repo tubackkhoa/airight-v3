@@ -36,6 +36,7 @@
     "@hookform/error-message": "^2.0.0",
     "@hookform/resolvers": "^2.9.10",
     "antd": "4.23.6",
+    "buffer": "^6.0.3",
     "classnames": "^2.3.2",
     "i18next": "^22.0.3",
     "i18next-browser-languagedetector": "^7.0.0",
@@ -46,10 +47,13 @@
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.38.0",
     "react-i18next": "^12.0.0",
+    "react-infinite-scroll-component": "^6.1.0",
+    "react-number-format": "^5.3.1",
     "react-router-dom": "^6.4.2",
     "zod": "3.19.1"
   },
   "devDependencies": {
+    "@rollup/plugin-inject": "^5.0.5",
     "@types/js-cookie": "^3.0.3",
     "@types/lodash": "^4.14.186",
     "@types/react": "^18.2.15",

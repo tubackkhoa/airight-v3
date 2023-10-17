@@ -14,7 +14,7 @@
     animation: fade-in-up 4s ease-in-out;
     position: relative;
     display: grid;
-    width: 930px;
+    max-width: 930px;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
 

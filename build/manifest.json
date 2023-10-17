@@ -1,0 +1,226 @@
+{
+  "_chunk-M2BEWT7H-2d4e7f2d.js": {
+    "file": "assets/chunk-M2BEWT7H-2d4e7f2d.js"
+  },
+  "index.css": {
+    "file": "assets/index-4a89318b.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "assets": [
+      "assets/logoName-546762c6.svg",
+      "assets/bg-ai-model-067f26d5.png",
+      "assets/bgSimpleRecipe-193459d1.png",
+      "assets/bottomright-7b34ec03.png",
+      "assets/topleft-01ed241a.png",
+      "assets/bannervideo-a3c229a2.mp4",
+      "assets/process-img-1964d83a.svg",
+      "assets/image-aimodel-nft-dafb8cb6.png",
+      "assets/nft-statistic-2b31e7f3.png",
+      "assets/bgIncoming-855660f6.png",
+      "assets/create-prompts-01-3d807509.png",
+      "assets/create-prompts-03-813e5f9f.png",
+      "assets/bg-touch-luck1-8fd32a9d.png",
+      "assets/bg-touch-luck2-810e1dfd.png",
+      "assets/Karla-Regular-S52ZIU5L-4e45d611.woff",
+      "assets/Poppins-Light-647f014d.ttf",
+      "assets/Poppins-Regular-707fdc5c.ttf",
+      "assets/Poppins-Medium-8d909883.ttf",
+      "assets/Poppins-SemiBold-248c0244.ttf",
+      "assets/Poppins-Bold-7219547e.ttf",
+      "assets/icomoon-3464c719.svg"
+    ],
+    "css": [
+      "assets/index-4a89318b.css"
+    ],
+    "dynamicImports": [
+      "node_modules/@dotlottie/react-player/dist/dist-AIQGIF54-AIRDCTYW.js",
+      "node_modules/@dotlottie/react-player/dist/dist-4JHQ5UB4-UQC3DUUT.js",
+      "node_modules/@dotlottie/react-player/dist/dotlottie-state-machine-manager-2STY3O46-JRH54NRU.js",
+      "node_modules/@dotlottie/react-player/dist/dotlottie-audio-XNJDYXTA.js",
+      "node_modules/@dotlottie/react-player/dist/lottie_worker-WHOD5EO7-VF575QIV.js",
+      "node_modules/@dotlottie/react-player/dist/lottie_light-IOYK46WR-C42PZIWW.js",
+      "node_modules/@dotlottie/react-player/dist/lottie_svg-NPHRPZVQ-SN5HKEBW.js",
+      "node_modules/@dotlottie/react-player/dist/lottie_light_canvas-JOJMVDMY-Y3JQKMNA.js",
+      "node_modules/@dotlottie/react-player/dist/lottie_canvas-MBHU2YSW-VFQ5A67K.js",
+      "node_modules/@dotlottie/react-player/dist/lottie_light_html-QXO6XUZK-N4R277UW.js",
+      "node_modules/@dotlottie/react-player/dist/lottie_html-DEQZ7JWN-7UJDZM6D.js"
+    ],
+    "file": "assets/index-cef9c79b.js",
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "node_modules/@dotlottie/react-player/dist/Karla-Regular-S52ZIU5L.woff": {
+    "file": "assets/Karla-Regular-S52ZIU5L-4e45d611.woff",
+    "src": "node_modules/@dotlottie/react-player/dist/Karla-Regular-S52ZIU5L.woff"
+  },
+  "node_modules/@dotlottie/react-player/dist/dist-4JHQ5UB4-UQC3DUUT.js": {
+    "file": "assets/dist-4JHQ5UB4-UQC3DUUT-c31778ed.js",
+    "imports": [
+      "index.html",
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/dist-4JHQ5UB4-UQC3DUUT.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/dist-AIQGIF54-AIRDCTYW.js": {
+    "file": "assets/dist-AIQGIF54-AIRDCTYW-3493aa73.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/dist-AIQGIF54-AIRDCTYW.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/dotlottie-audio-XNJDYXTA.js": {
+    "file": "assets/dotlottie-audio-XNJDYXTA-f557bb12.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/dotlottie-audio-XNJDYXTA.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/dotlottie-state-machine-manager-2STY3O46-JRH54NRU.js": {
+    "file": "assets/dotlottie-state-machine-manager-2STY3O46-JRH54NRU-e02631af.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/dotlottie-state-machine-manager-2STY3O46-JRH54NRU.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/lottie_canvas-MBHU2YSW-VFQ5A67K.js": {
+    "file": "assets/lottie_canvas-MBHU2YSW-VFQ5A67K-34d36756.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/lottie_canvas-MBHU2YSW-VFQ5A67K.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/lottie_html-DEQZ7JWN-7UJDZM6D.js": {
+    "file": "assets/lottie_html-DEQZ7JWN-7UJDZM6D-84fdb830.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/lottie_html-DEQZ7JWN-7UJDZM6D.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/lottie_light-IOYK46WR-C42PZIWW.js": {
+    "file": "assets/lottie_light-IOYK46WR-C42PZIWW-842cd67b.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/lottie_light-IOYK46WR-C42PZIWW.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/lottie_light_canvas-JOJMVDMY-Y3JQKMNA.js": {
+    "file": "assets/lottie_light_canvas-JOJMVDMY-Y3JQKMNA-129b1fdc.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/lottie_light_canvas-JOJMVDMY-Y3JQKMNA.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/lottie_light_html-QXO6XUZK-N4R277UW.js": {
+    "file": "assets/lottie_light_html-QXO6XUZK-N4R277UW-62a905c2.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/lottie_light_html-QXO6XUZK-N4R277UW.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/lottie_svg-NPHRPZVQ-SN5HKEBW.js": {
+    "file": "assets/lottie_svg-NPHRPZVQ-SN5HKEBW-b354eb1e.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/lottie_svg-NPHRPZVQ-SN5HKEBW.js"
+  },
+  "node_modules/@dotlottie/react-player/dist/lottie_worker-WHOD5EO7-VF575QIV.js": {
+    "file": "assets/lottie_worker-WHOD5EO7-VF575QIV-6e8b61e9.js",
+    "imports": [
+      "_chunk-M2BEWT7H-2d4e7f2d.js"
+    ],
+    "isDynamicEntry": true,
+    "src": "node_modules/@dotlottie/react-player/dist/lottie_worker-WHOD5EO7-VF575QIV.js"
+  },
+  "src/resources/fonts/Poppins/Poppins-Bold.ttf": {
+    "file": "assets/Poppins-Bold-7219547e.ttf",
+    "src": "src/resources/fonts/Poppins/Poppins-Bold.ttf"
+  },
+  "src/resources/fonts/Poppins/Poppins-Light.ttf": {
+    "file": "assets/Poppins-Light-647f014d.ttf",
+    "src": "src/resources/fonts/Poppins/Poppins-Light.ttf"
+  },
+  "src/resources/fonts/Poppins/Poppins-Medium.ttf": {
+    "file": "assets/Poppins-Medium-8d909883.ttf",
+    "src": "src/resources/fonts/Poppins/Poppins-Medium.ttf"
+  },
+  "src/resources/fonts/Poppins/Poppins-Regular.ttf": {
+    "file": "assets/Poppins-Regular-707fdc5c.ttf",
+    "src": "src/resources/fonts/Poppins/Poppins-Regular.ttf"
+  },
+  "src/resources/fonts/Poppins/Poppins-SemiBold.ttf": {
+    "file": "assets/Poppins-SemiBold-248c0244.ttf",
+    "src": "src/resources/fonts/Poppins/Poppins-SemiBold.ttf"
+  },
+  "src/resources/fonts/icomoon/icomoon.svg": {
+    "file": "assets/icomoon-3464c719.svg",
+    "src": "src/resources/fonts/icomoon/icomoon.svg"
+  },
+  "src/resources/images/bg-ai-model.png": {
+    "file": "assets/bg-ai-model-067f26d5.png",
+    "src": "src/resources/images/bg-ai-model.png"
+  },
+  "src/resources/images/bg-touch-luck1.png": {
+    "file": "assets/bg-touch-luck1-8fd32a9d.png",
+    "src": "src/resources/images/bg-touch-luck1.png"
+  },
+  "src/resources/images/bg-touch-luck2.png": {
+    "file": "assets/bg-touch-luck2-810e1dfd.png",
+    "src": "src/resources/images/bg-touch-luck2.png"
+  },
+  "src/resources/images/bgIncoming.png": {
+    "file": "assets/bgIncoming-855660f6.png",
+    "src": "src/resources/images/bgIncoming.png"
+  },
+  "src/resources/images/bgSimpleRecipe.png": {
+    "file": "assets/bgSimpleRecipe-193459d1.png",
+    "src": "src/resources/images/bgSimpleRecipe.png"
+  },
+  "src/resources/images/bottomright.png": {
+    "file": "assets/bottomright-7b34ec03.png",
+    "src": "src/resources/images/bottomright.png"
+  },
+  "src/resources/images/create-prompts-01.png": {
+    "file": "assets/create-prompts-01-3d807509.png",
+    "src": "src/resources/images/create-prompts-01.png"
+  },
+  "src/resources/images/create-prompts-03.png": {
+    "file": "assets/create-prompts-03-813e5f9f.png",
+    "src": "src/resources/images/create-prompts-03.png"
+  },
+  "src/resources/images/image-aimodel-nft.png": {
+    "file": "assets/image-aimodel-nft-dafb8cb6.png",
+    "src": "src/resources/images/image-aimodel-nft.png"
+  },
+  "src/resources/images/nft-statistic.png": {
+    "file": "assets/nft-statistic-2b31e7f3.png",
+    "src": "src/resources/images/nft-statistic.png"
+  },
+  "src/resources/images/topleft.png": {
+    "file": "assets/topleft-01ed241a.png",
+    "src": "src/resources/images/topleft.png"
+  },
+  "src/resources/svg/logoName.svg": {
+    "file": "assets/logoName-546762c6.svg",
+    "src": "src/resources/svg/logoName.svg"
+  },
+  "src/resources/svg/process-img.svg": {
+    "file": "assets/process-img-1964d83a.svg",
+    "src": "src/resources/svg/process-img.svg"
+  },
+  "src/resources/videos/bannervideo.mp4": {
+    "file": "assets/bannervideo-a3c229a2.mp4",
+    "src": "src/resources/videos/bannervideo.mp4"
+  }
+}
