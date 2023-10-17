@@ -30,6 +30,7 @@ export default defineConfig({
       theme: path.resolve('./src/theme'),
       resources: path.resolve('./src/resources'),
       store: path.resolve('./src/store'),
+      utils: path.resolve('./src/utils'),
 
       // //Fix build dependencies
       // process: 'process/browser',

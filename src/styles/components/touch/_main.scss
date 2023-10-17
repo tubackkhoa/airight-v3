@@ -8,6 +8,13 @@
   align-items: center;
   justify-content: center;
   padding: 0 240px;
+  padding-top: 5vh;
+
+  @include small_tablet_max {
+    padding: 0 80px;
+    padding-top: 25vh;
+    text-align: center;
+  }
 
   .content {
     display: grid;
@@ -15,9 +22,17 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     z-index: 20;
 
+    @include tablet_max {
+      display: flex;
+      flex-direction: column;
+    }
+
     .left {
       display: flex;
       flex-direction: column;
+      @include tablet_max {
+        width: 100%;
+      }
 
       .ingredient {
         position: relative;
@@ -26,13 +41,21 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 40px;
-        text-align: left;
 
         .title {
           font-size: 24px;
           font-weight: 300;
           line-height: 36px;
           color: #da613a;
+          @include small_tablet_max {
+            font-size: 20px;
+            line-height: 20px;
+          }
+
+          @include mobile_max {
+            font-size: 14px;
+            line-height: 10px;
+          }
         }
 
         .desc {
@@ -42,6 +65,15 @@
           line-height: 78px;
           color: rgb(24, 24, 24);
           transition-duration: 0.5s;
+
+          @include small_tablet_max {
+            font-size: 30px;
+            line-height: 40px;
+          }
+
+          @include mobile_max {
+            line-height: 25px;
+          }
 
           p {
           }
@@ -76,6 +108,11 @@
         text-align: left;
         gap: 48px;
 
+        @include tablet_max {
+          top: 260px;
+          gap: 24px;
+        }
+
         .desc {
           display: flex;
           flex-direction: column;
@@ -105,6 +142,18 @@
       top: -5%;
       width: 83%;
       flex-shrink: 0;
+
+      @include tablet_max() {
+        width: 70%;
+        top: -37%;
+        left: 25%;
+      }
+
+      @include mobile_max() {
+        width: 100%;
+        top: -45%;
+        left: 15%;
+      }
     }
   }
   .bgleft {

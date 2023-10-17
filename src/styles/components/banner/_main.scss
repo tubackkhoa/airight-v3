@@ -223,6 +223,13 @@
         font-size: 92px;
         color: #000;
         font-weight: 300;
+
+        @include ultra_tablet_max {
+          font-size: 52px;
+        }
+        @include tablet_max {
+          font-size: 32px;
+        }
       }
 
       .bottom {
@@ -230,6 +237,13 @@
         font-size: 92px;
         color: #000;
         font-weight: 300;
+
+        @include ultra_tablet_max {
+          font-size: 52px;
+        }
+        @include tablet_max {
+          font-size: 32px;
+        }
 
         .highlight {
           display: flex;
@@ -242,6 +256,12 @@
           padding: 0 32px;
           font-size: 78px;
           font-weight: 700;
+          @include ultra_tablet_max {
+            font-size: 52px;
+          }
+          @include tablet_max {
+            font-size: 32px;
+          }
         }
       }
     }

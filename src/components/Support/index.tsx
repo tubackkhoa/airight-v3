@@ -61,7 +61,7 @@ const Support = () => {
             </div>
           </div>
 
-          <div className='social-wrapper flex flex-col items-center pt-24 lg:p-0'>
+          <div className='social-wrapper'>
             <div>
               {SOCIAL_LIST.map((e) => (
                 <Link target='_blank' to={e.link}>

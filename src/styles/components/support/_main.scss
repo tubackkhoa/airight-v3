@@ -92,6 +92,10 @@
     footer {
       padding: 52px;
 
+      @include small_tablet_max {
+        padding: 20px;
+      }
+
       .content {
         display: flex;
         justify-content: space-between;
@@ -108,8 +112,10 @@
 
           @include small_tablet_max {
             margin: 0;
+            margin-bottom: 20px;
             width: 100%;
             text-align: center;
+            align-items: center;
           }
 
           .desc {
@@ -120,6 +126,7 @@
 
             @include small_tablet_max {
               padding: 16px 0;
+              text-align: center;
             }
           }
 
@@ -137,6 +144,11 @@
           justify-content: space-evenly;
           flex: 1 1 0%;
           width: 66%;
+
+          @include small_tablet_max {
+            width: 100%;
+            margin-bottom: 20px;
+          }
 
           .menu-col {
             display: flex;
@@ -163,6 +175,10 @@
         flex-direction: column;
         align-items: center;
         padding-top: 96px;
+
+        @include ultra_tablet_max {
+          padding-top: 26px;
+        }
 
         @include small_tablet_max {
           padding: 0;

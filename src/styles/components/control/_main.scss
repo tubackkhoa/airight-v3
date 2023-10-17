@@ -1,0 +1,152 @@
+.control-wrapper {
+  .navigate {
+    position: relative;
+    top: 112px;
+    z-index: 50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.hidden {
+      visibility: hidden;
+    }
+
+    .formula {
+      display: flex;
+      position: fixed;
+      align-items: center;
+      gap: 12px;
+      visibility: hidden;
+
+      @include small_tablet_max {
+        // @include scrollbars();
+        overflow-x: scroll;
+      }
+
+      @include tablet_max {
+        right: 40px;
+      }
+
+      &.visible {
+        visibility: visible;
+      }
+
+      .btn-nav {
+        display: flex;
+        width: 245px;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+        border-radius: 1000px;
+        border: 1px solid rgb(240, 242, 250);
+        padding: 10px 18px;
+        cursor: pointer;
+        color: rgb(97, 104, 121);
+        background-color: #fff;
+
+        &.active {
+          background-color: #da613a;
+          color: #fff;
+          border: unset;
+        }
+
+        .step-name {
+          text-align: center;
+          font-size: 14px;
+          font-weight: 400;
+          text-transform: uppercase;
+
+          @include tablet_max {
+            font-size: 8px;
+          }
+        }
+      }
+      .equal {
+        font-size: 52px;
+        font-weight: 100;
+        color: #9da3b5;
+
+        &.active {
+          color: #da613a;
+        }
+      }
+    }
+
+    .vertical-nav {
+      position: fixed;
+      left: 40px;
+      top: 320px;
+      display: inline-flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+
+      &.hidden {
+        visibility: hidden;
+      }
+
+      @include small_tablet_max {
+        visibility: hidden;
+        left: 20px;
+      }
+
+      .btn-square {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .link {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    height: 120px;
+    width: 120px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    background-color: #da613a;
+    padding: 40px 10px;
+    transition-duration: 0.5s;
+    visibility: hidden;
+
+    &.visible {
+      visibility: visible;
+    }
+
+    @include tablet_max {
+      width: 60px;
+      height: 60px;
+      padding: 20px 0;
+    }
+
+    &-text {
+      width: 100px;
+      font-size: 13px;
+      font-weight: 600;
+      color: #fff;
+      text-align: center;
+
+      @include tablet_max {
+        font-size: 8px;
+      }
+    }
+  }
+
+  .btn-feed {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    z-index: 100;
+    &:hover {
+      opacity: 0.75;
+    }
+
+    @include tablet_max {
+      margin-left: -25px;
+      transform: translate(0, 0) rotate(0) skewX(0) skewY(0) scaleX(0.75) scaleY(0.75);
+    }
+  }
+}
